@@ -1,0 +1,12 @@
+[
+   {
+      "directory" : "C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1/Debug",
+      "command"   : "clang++ -I\"C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_20.2.4.LTS/include\" -Dccs=\"ccs\" -DPART_TM4C1294NCPDT -xc",
+      "file"      : "C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1/main.c"
+   },
+   {
+      "directory" : "C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1/Debug",
+      "command"   : "clang++ -I\"C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1\" -I\"C:/ti/TivaWare_C_Series-2.2.0.295\" -I\"C:/ti/ti-cgt-arm_20.2.4.LTS/include\" -Dccs=\"ccs\" -DPART_TM4C1294NCPDT -xc",
+      "file"      : "C:/Users/georg/workspace_ccstheia/MC_LAB_2_task_1.1/tm4c1294ncpdt_startup_ccs.c"
+   }
+]
