@@ -74,25 +74,25 @@ void configure_timer() {
 /*******************************************************************************************/
 
 void configure_pins() {
-    SYSCTL_RCGCGPIO_R |= (1 << 0);               // Set Port A to active
-    while((SYSCTL_PRGPIO_R & (1 << 0)) == 0) {};
+    SYSCTL_RCGCGPIO_R |= (1 << 3);               // Set Port D to active
+    while((SYSCTL_PRGPIO_R & (1 << 3)) == 0) {};
     
-    GPIO_PORTA_AHB_DIR_R |= (1 << 2);            // Set PA2 as output
-    GPIO_PORTA_AHB_DEN_R |= (1 << 2);            // Enable digital on PA2
+    GPIO_PORTD_AHB_DIR_R |= (1 << 2);            // Set PD2 as output
+    GPIO_PORTD_AHB_DEN_R |= (1 << 2);            // Enable digital on PD2
 
-    GPIO_PORTA_AHB_DIR_R &= ~(1 << 3);           // Set PA3 as input
-    GPIO_PORTA_AHB_DEN_R |= (1 << 3);            // Enable digital on PA3
-    GPIO_PORTA_AHB_AFSEL_R |= (1 << 3);          // Enable alternate function on PA3
+    GPIO_PORTD_AHB_DIR_R &= ~(1 << 3);           // Set PD3 as input
+    GPIO_PORTD_AHB_DEN_R |= (1 << 3);            // Enable digital on PD3
+    GPIO_PORTD_AHB_AFSEL_R |= (1 << 3);          // Enable alternate function on PD3
 
-    GPIO_PORTA_AHB_PCTL_R = (GPIO_PORTA_AHB_PCTL_R & ~0x0000F000) | (3 << 12);
+    GPIO_PORTD_AHB_PCTL_R = (GPIO_PORTD_AHB_PCTL_R & ~0x0000F000) | (3 << 12);
 }
 
 /*******************************************************************************************/
 
 void trigger_sensor() {
-    GPIO_PORTA_AHB_DATA_R |= (1 << 2);
+    GPIO_PORTD_AHB_DATA_R |= (1 << 2);
     wait(10);
-    GPIO_PORTA_AHB_DATA_R &= ~(1 << 2);
+    GPIO_PORTD_AHB_DATA_R &= ~(1 << 2);
 }
 
 /*******************************************************************************************/
