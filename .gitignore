@@ -1,0 +1,19 @@
+# Code Composer Studio / Eclipse build folders
+Debug/
+Release/
+
+# Compiled Object files, Executables, and Maps
+*.out
+*.map
+*.obj
+*.o
+*.a
+*.lib
+
+# Local Debug configurations and logs
+.launches/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
