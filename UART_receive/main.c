@@ -1,9 +1,8 @@
-/** Default Project for TM4C1294ncpdt
+/** UART project for recieving the data from PC through TM4C1294ncpdt
  *
- * File:    main.c
- * Author:
- * Date:
- * Version:
+ * Author:  George Molyboga
+ * Date:    16.06.2026
+ * Version: V1
  *
  * Receives UART payload from the PC, and MCU prints in the console.
  */

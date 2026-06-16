@@ -1,11 +1,10 @@
-/** Default Project for TM4C1294ncpdt
+/** UART project for sending the data through TM4C1294ncpdt to the PC
  *
- * File:    main.c
- * Author:
- * Date:
- * Version:
+ * Author:  George Molyboga
+ * Date:    16.06.2026
+ * Version: V1
  *
- * Sends character 'H' to the PC via UART continuously.
+ * Sends the binary 0x3B to the PC via UART continuously.
  */
 
 #include "inc/tm4c1294ncpdt.h"
