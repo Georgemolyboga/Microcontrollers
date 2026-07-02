@@ -23,8 +23,8 @@ A C cross-platform communication project demonstrating a dual-processor architec
 ---
 
 ## Physical System Integration
-
-![Physical Configuration](/Microcontrollers/06_MC_to_MC_UART_communication/Physical_Configuration.jpeg "Physical Configuration")
+	
+![Physical Configuration](Physical_Configuration.jpeg)
 
 ---
 
@@ -53,4 +53,4 @@ The main system execution context on the TM4C1294 unrolls sequentially inside a 
 ---
 
 ## Collaborators
-* [lcarricart](https://github.com/lcarricart/02-Microcontrollers/commits?author=lcarricart) - Project Contributor
+* [lcarricart](hhttps://github.com/lcarricart) - Project Contributor
