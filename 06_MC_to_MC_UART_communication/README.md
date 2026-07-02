@@ -53,4 +53,4 @@ The main system execution context on the TM4C1294 unrolls sequentially inside a 
 ---
 
 ## Collaborators
-* [lcarricart](hhttps://github.com/lcarricart) - Project Contributor
+* [lcarricart](https://github.com/lcarricart) - Project Contributor
