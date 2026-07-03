@@ -30,7 +30,9 @@ A C project for the Texas Instruments Tiva C Series **TM4C1294NCPDT** microcontr
 * Configures it to a 32-bit standalone timer operating in **One-Shot Mode** (counts down to zero once and stops).
 * Calculation for the Interval Load Register (`TIMER0_TAILR_R`):
   
-$$\text{Ticks} = \left(\frac{\text{SYS\_CLOCK\_HZ}}{1000}\right) \times \text{ms} - 1$$
+```text
+Ticks = (SYS_CLOCK_HZ / 1000) * ms - 1
+```
 
 * Polls the Raw Interrupt Status register (`TIMER0_RIS_R`) until the timeout flag asserts, then clears the flag.
 
